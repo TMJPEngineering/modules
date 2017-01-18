@@ -3,10 +3,10 @@
 use Pingpong\Modules\Routing\Controller;
 
 class $CLASS$ extends Controller {
-	
-	public function index()
-	{
-		return view('$LOWER_NAME$::index');
-	}
-	
+    
+    public function index()
+    {
+        return view('$LOWER_NAME$::index');
+    }
+    
 }
