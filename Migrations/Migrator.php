@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Migrations;
 
 use Pingpong\Modules\Module;

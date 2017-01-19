@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Generators;
 
 use Illuminate\Filesystem\Filesystem;

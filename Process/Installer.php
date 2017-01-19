@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Process;
 
 use Illuminate\Console\Command;

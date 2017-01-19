@@ -1,5 +1,5 @@
 <?php
-namespace Illuminate\Foundation\Console;
+namespace Pingpong\Modules\Commands;
 
 use Illuminate\Support\Str;
 use Pingpong\Modules\Traits\ModuleCommandTrait;
@@ -15,7 +15,7 @@ class PolicyCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $argumentName = 'policy';
+    protected $argumentName = 'name';
 
     /**
      * The console command name.
@@ -39,7 +39,7 @@ class PolicyCommand extends GeneratorCommand
     protected function getArguments()
     {
         return [
-            ['policy', InputArgument::REQUIRED, 'The name of policy will be created.'],
+            ['name', InputArgument::REQUIRED, 'The name of policy will be created.'],
             ['module', InputArgument::OPTIONAL, 'The name of module will be used.'],
         ];
     }
@@ -65,17 +65,17 @@ class PolicyCommand extends GeneratorCommand
     {
         $path = $this->laravel['modules']->getModulePath($this->getModuleName());
 
-        $controllerPath = $this->laravel['modules']->config('paths.generator.policy');
+        $policyPath = $this->laravel['modules']->config('paths.generator.policy');
 
-        return $path . $controllerPath . '/' . $this->getModelName() . '.php';
+        return $path . $policyPath . '/' . $this->getPolicyName() . '.php';
     }
 
     /**
      * @return mixed|string
      */
-    private function getModelName()
+    private function getPolicyName()
     {
-        return Str::studly($this->argument('model'));
+        return Str::studly($this->argument('name'));
     }
 
     /**

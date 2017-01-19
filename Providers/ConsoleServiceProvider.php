@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -42,6 +41,7 @@ class ConsoleServiceProvider extends ServiceProvider
         'MigrateRollback',
         'Migration',
         'Model',
+        'Policy',
         'Publish',
         'PublishMigration',
         'PublishTranslation',

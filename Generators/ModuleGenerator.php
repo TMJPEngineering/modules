@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Generators;
 
 use Illuminate\Config\Repository as Config;
@@ -315,7 +314,7 @@ class ModuleGenerator extends Generator
         $this->console->call('module:make-seed', [
             'name' => $this->getName(),
             'module' => $this->getName(),
-            '--master' => true,
+            '--master' => false,
         ]);
 
         $this->console->call('module:make-provider', [

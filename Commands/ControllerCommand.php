@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Commands;
 
 use Pingpong\Support\Stub;
