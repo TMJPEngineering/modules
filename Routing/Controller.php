@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Routing;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
