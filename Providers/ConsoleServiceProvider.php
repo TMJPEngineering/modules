@@ -48,6 +48,7 @@ class ConsoleServiceProvider extends ServiceProvider
         'Seed',
         'SeedMake',
         'Setup',
+        'Test',
         'Update',
         'Use',
         'Dump',
