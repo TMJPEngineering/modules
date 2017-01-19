@@ -1,9 +1,9 @@
-<?php namespace $NAMESPACE$;
+<?php
+namespace $NAMESPACE$;
    
 use Illuminate\Database\Eloquent\Model;
 
-class $CLASS$ extends Model {
-
+class $CLASS$ extends Model
+{
     protected $fillable = $FILLABLE$;
-
 }
