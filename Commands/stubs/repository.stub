@@ -1,0 +1,10 @@
+<?php
+namespace $MODULE_NAMESPACE$\$MODULE$\Repositories;
+
+use App\Repositories\BaseEloquentRepository;
+use $MODULE_NAMESPACE$\$MODULE$\Interfaces\$MODULE$Repository;
+
+class Eloquent$MODULE$Repository extends BaseEloquentRepository implements $MODULE$Repository
+{
+    //
+}
