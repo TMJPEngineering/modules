@@ -34,6 +34,7 @@ class ConsoleServiceProvider extends ServiceProvider
         'GenerateProvider',
         'GenerateRouteProvider',
         'Install',
+        'Job',
         'List',
         'Migrate',
         'MigrateRefresh',
