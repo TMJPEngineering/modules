@@ -39,7 +39,7 @@ class TestCommand extends GeneratorCommand
     protected function getArguments()
     {
         return [
-            ['name', InputArgument::REQUIRED, 'The name of policy will be created.'],
+            ['name', InputArgument::REQUIRED, 'The name of test will be created.'],
             ['module', InputArgument::OPTIONAL, 'The name of module will be used.'],
         ];
     }

@@ -3,7 +3,7 @@ namespace $MODULE_NAMESPACE$\$MODULE$\Interfaces;
 
 use App\Interfaces\BaseEloquent;
 
-interface PreviousCompanyRepository extends BaseEloquent
+interface $MODULE$Repository extends BaseEloquent
 {
     //
 }

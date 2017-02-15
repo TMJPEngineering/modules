@@ -8,5 +8,5 @@ class $CLASS$ extends Controller
     public function index()
     {
         return view('$LOWER_NAME$::index');
-    }    
+    }
 }
