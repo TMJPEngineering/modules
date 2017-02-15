@@ -31,6 +31,7 @@ class ConsoleServiceProvider extends ServiceProvider
         'Disable',
         'Enable',
         'Event',
+        'EventGenerate',
         'GenerateFilter',
         'GenerateProvider',
         'GenerateRouteProvider',
