@@ -37,6 +37,7 @@ class ConsoleServiceProvider extends ServiceProvider
         'Install',
         'Job',
         'List',
+        'Listener',
         'Migrate',
         'MigrateRefresh',
         'MigrateReset',

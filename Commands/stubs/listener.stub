@@ -1,6 +1,10 @@
 <?php
 namespace $MODULE_NAMESPACE$\$MODULE$\Listeners;
 
+use $MODULE_NAMESPACE$\$MODULE$\Events\$EVENT_NAME$;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
+
 class $CLASS$
 {
     /**
