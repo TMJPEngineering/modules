@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;

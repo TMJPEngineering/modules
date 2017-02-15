@@ -1,0 +1,30 @@
+<?php
+namespace $MODULE_NAMESPACE$\$MODULE$\Listeners;
+
+use $MODULE_NAMESPACE$\$MODULE$\Events\$EVENT_NAME$;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Contracts\Queue\ShouldQueue;
+
+class $CLASS$
+{
+    /**
+     * Create the event listener.
+     *
+     * @return void
+     */
+    public function __construct()
+    {
+        //
+    }
+
+    /**
+     * Handle the event.
+     *
+     * @param  $EVENT_NAME$  $event
+     * @return void
+     */
+    public function handle($EVENT_NAME$ $event)
+    {
+        //
+    }
+}

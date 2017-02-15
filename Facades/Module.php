@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Facades;
 
 use Illuminate\Support\Facades\Facade;

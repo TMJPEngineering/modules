@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Traits;
 
 trait ModuleCommandTrait

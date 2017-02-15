@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Publishing;
 
 class MigrationPublisher extends AssetPublisher
