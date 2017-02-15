@@ -1,5 +1,5 @@
 {
-  "name": "pingpong/modules",
+  "name": "tmj/modules",
   "description": "Laravel Modules",
   "keywords": [
     "modules",
@@ -17,7 +17,7 @@
   ],
   "require": {
     "php": ">=5.4.0",
-    "laravel/framework": "5.3.*",
+    "laravel/framework": "5.2.*",
     "pingpong/generators": "2.2.*",
     "pingpong/support": "dev-master",
     "laravelcollective/html": "~5.0"

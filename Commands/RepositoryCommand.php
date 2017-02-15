@@ -6,7 +6,6 @@ use Illuminate\Filesystem\Filesystem;
 use Symfony\Component\Console\Input\InputArgument;
 use Pingpong\Support\Stub;
 use Pingpong\Modules\Traits\ModuleCommandTrait;
-use Pingpong\Modules\Generators\FileAlreadyExistException;
 
 class RepositoryCommand extends Command
 {
@@ -59,27 +58,29 @@ class RepositoryCommand extends Command
             $this->info("Created : " . app_path('Repositories\BaseEloquentRepository.php'));
         }
 
-        try {
-            $interfacePath = $this->laravel['modules']->config('paths.generator.interface');
-            $interfaceFile = $path . "$interfacePath/" . $name . '.php';
+        $interfacePath = $this->laravel['modules']->config('paths.generator.interface');
+        $interfaceFile = $path . "$interfacePath/" . $name . '.php';
+
+        if ( ! $this->filesystem->exists($interfaceFile)) {
             $this->filesystem->put($interfaceFile, $this->getStubContent('interface', [
                 'MODULE' => $this->getModuleName(),
                 'MODULE_NAMESPACE' => $this->laravel['modules']->config('namespace'),
             ]));
             $this->info("Created : {$interfaceFile}");
-        } catch (FileAlreadyExistException $e) {
+        } else {
             $this->error("File : {$interfaceFile} already exists.");
         }
 
-        try {
-            $repositoryPath = $this->laravel['modules']->config('paths.generator.repository');
-            $repositoryFile = $path . "$repositoryPath/Eloquent" . $name . '.php';
+        $repositoryPath = $this->laravel['modules']->config('paths.generator.repository');
+        $repositoryFile = $path . "$repositoryPath/Eloquent" . $name . '.php';
+
+        if ( ! $this->filesystem->exists($repositoryFile)) {
             $this->filesystem->put($repositoryFile, $this->getStubContent('repository', [
                 'MODULE' => $this->getModuleName(),
                 'MODULE_NAMESPACE' => $this->laravel['modules']->config('namespace'),
             ]));
             $this->info("Created : {$repositoryFile}");
-        } catch (FileAlreadyExistException $e) {
+        } else {
             $this->error("File : {$repositoryFile} already exists.");
         }
     }
