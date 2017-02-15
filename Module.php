@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules;
 
 use Illuminate\Foundation\AliasLoader;

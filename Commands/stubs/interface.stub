@@ -1,0 +1,9 @@
+<?php
+namespace $MODULE_NAMESPACE$\$MODULE$\Interfaces;
+
+use App\Interfaces\BaseEloquent;
+
+interface $MODULE$Repository extends BaseEloquent
+{
+    //
+}

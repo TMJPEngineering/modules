@@ -1,5 +1,4 @@
 <?php
-
 namespace Pingpong\Modules\Providers;
 
 use Illuminate\Support\ServiceProvider;
@@ -31,23 +30,30 @@ class ConsoleServiceProvider extends ServiceProvider
         'Controller',
         'Disable',
         'Enable',
+        'Event',
+        'EventGenerate',
         'GenerateFilter',
         'GenerateProvider',
         'GenerateRouteProvider',
         'Install',
+        'Job',
         'List',
+        'Listener',
         'Migrate',
         'MigrateRefresh',
         'MigrateReset',
         'MigrateRollback',
         'Migration',
         'Model',
+        'Policy',
         'Publish',
         'PublishMigration',
         'PublishTranslation',
+        'Repository',
         'Seed',
         'SeedMake',
         'Setup',
+        'Test',
         'Update',
         'Use',
         'Dump',
