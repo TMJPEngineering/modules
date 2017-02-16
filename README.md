@@ -84,6 +84,19 @@ Next, add the following aliases to `aliases` array in the same file.
 ],
 ```
 
+#### Tests
+
+Add the following directory in `phpunit.xml`.
+
+```xml
+    ...
+    <testsuite name="Application Test Suite">
+        ...
+        <directory suffix="Test.php">./modules</directory>
+    </testsuite>
+    ...
+```
+
 Next publish the package's configuration file by run:
 
 ```{r, engine='sh'}
