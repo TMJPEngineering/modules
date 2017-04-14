@@ -1,5 +1,5 @@
 <?php
-namespace $MODULE_NAMESPACE$\$MODULE$\Http;
+namespace $MODULE_NAMESPACE$\$STUDLY_NAME$\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
