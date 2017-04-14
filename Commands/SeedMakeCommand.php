@@ -64,7 +64,6 @@ class SeedMakeCommand extends GeneratorCommand
             'NAME' => $this->getSeederName(),
             'MODULE' => $this->getModuleName(),
             'MODULE_NAMESPACE' => $this->laravel['modules']->config('namespace'),
-            
         ]))->render();
     }
 
@@ -87,8 +86,6 @@ class SeedMakeCommand extends GeneratorCommand
      */
     private function getSeederName()
     {
-        $end = $this->option('master') ? 'DatabaseSeeder' : 'TableSeeder';
-
-        return Str::studly($this->argument('name')).$end;
+        return Str::studly($this->argument('name')) . 'TableSeeder';
     }
 }
