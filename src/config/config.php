@@ -36,7 +36,7 @@ return [
             'start' => ['LOWER_NAME'],
             'routes' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
             'json' => ['LOWER_NAME', 'STUDLY_NAME', 'MODULE_NAMESPACE'],
-            'kernel' => ['MODULE_NAMESPACE', 'MODULE'],
+            'kernel' => ['MODULE_NAMESPACE', 'STUDLY_NAME'],
             'views/index' => ['LOWER_NAME'],
             'views/master' => ['STUDLY_NAME'],
             'scaffold/config' => ['STUDLY_NAME'],
